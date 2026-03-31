@@ -1,5 +1,42 @@
 body {
   font-family: 'Noto Sans', sans-serif;
+  background: radial-gradient(circle at top right, #fbe8dc 0%, #f6f0e8 30%, #eef2f6 100%);
+  color: #17212b;
+}
+
+:root {
+  --accent: #b14d1f;
+  --accent-soft: #f6d5c6;
+  --ink: #17212b;
+  --muted: #5a6773;
+  --card-bg: rgba(255, 255, 255, 0.88);
+}
+
+.hero-landing {
+  background: linear-gradient(135deg, rgba(245, 223, 205, 0.9) 0%, rgba(239, 247, 255, 0.9) 70%);
+  border-bottom: 1px solid rgba(23, 33, 43, 0.08);
+}
+
+.hero-landing .hero-body {
+  padding-top: 3.6rem;
+  padding-bottom: 2.4rem;
+}
+
+.award-badge {
+  display: inline-block;
+  margin: 0.6rem auto 1rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+  color: #6f2d11;
+  background: linear-gradient(120deg, #ffe8d8, #fbd7ae);
+  border: 1px solid rgba(111, 45, 17, 0.12);
+}
+
+.venue-line {
+  color: var(--muted);
 }
 
 
@@ -11,6 +48,13 @@ body {
 .link-block a {
     margin-top: 5px;
     margin-bottom: 5px;
+  box-shadow: 0 6px 18px rgba(20, 26, 36, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-block a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(20, 26, 36, 0.18);
 }
 
 .dnerf {
@@ -19,8 +63,8 @@ body {
 
 
 .teaser .hero-body {
-  padding-top: 0;
-  padding-bottom: 3rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.8rem;
 }
 
 .teaser {
@@ -29,6 +73,8 @@ body {
 
 
 .publication-title {
+  color: var(--ink);
+  line-height: 1.15;
 }
 
 .publication-banner {
@@ -71,7 +117,7 @@ body {
 }
 
 .publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
+  color: #0d6c8f !important;
 }
 
 .publication-authors a:hover {
@@ -97,6 +143,60 @@ body {
 
     overflow: hidden;
     border-radius: 10px !important;
+}
+
+.showcase-section .hero-body {
+  background: var(--card-bg);
+  border: 1px solid rgba(23, 33, 43, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 14px 34px rgba(16, 25, 35, 0.08);
+}
+
+.showcase-section h3.title {
+  color: var(--ink);
+}
+
+.abstract-section .content {
+  color: #1f2d3a;
+  font-size: 1.02rem;
+}
+
+video {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(17, 27, 39, 0.15);
+  box-shadow: 0 10px 30px rgba(17, 27, 39, 0.15);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(23, 33, 43, 0.12);
+  margin: 2rem auto;
+  width: min(920px, 92vw);
+}
+
+.footer {
+  background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-landing .hero-body {
+    padding-top: 2.4rem;
+    padding-bottom: 1.8rem;
+  }
+
+  .publication-title {
+    font-size: 1.95rem !important;
+  }
+
+  .award-badge {
+    font-size: 0.82rem;
+  }
+
+  .showcase-section .hero-body {
+    border-radius: 12px;
+    padding: 1rem;
+  }
 }
 
 .publication-video iframe {
