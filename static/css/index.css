@@ -23,16 +23,38 @@ body {
 }
 
 .award-badge {
-  display: inline-block;
-  margin: 0.6rem auto 1rem;
-  padding: 0.35rem 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0.85rem auto 1.1rem;
+  padding: 0.38rem 0.95rem 0.38rem 0.45rem;
   border-radius: 999px;
   font-family: 'Google Sans', sans-serif;
-  font-size: 0.92rem;
+  font-size: 0.95rem;
+  font-weight: 700;
   letter-spacing: 0.02em;
-  color: #6f2d11;
-  background: linear-gradient(120deg, #ffe8d8, #fbd7ae);
-  border: 1px solid rgba(111, 45, 17, 0.12);
+  color: #57220c;
+  background: linear-gradient(125deg, #fff1e2 0%, #ffd7a7 45%, #ffc67f 100%);
+  border: 1px solid rgba(111, 45, 17, 0.22);
+  box-shadow: 0 10px 24px rgba(125, 62, 24, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.award-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #fff8ef;
+  background: linear-gradient(140deg, #ab3b1b, #7f2d13);
+}
+
+.award-text {
+  white-space: nowrap;
 }
 
 .venue-line {
@@ -190,7 +212,19 @@ hr {
   }
 
   .award-badge {
-    font-size: 0.82rem;
+    font-size: 0.78rem;
+    gap: 0.4rem;
+    padding-right: 0.75rem;
+  }
+
+  .award-label {
+    font-size: 0.66rem;
+    padding: 0.18rem 0.5rem;
+  }
+
+  .award-text {
+    white-space: normal;
+    text-align: left;
   }
 
   .showcase-section .hero-body {
